@@ -1,0 +1,6 @@
+value=int(input("Please, enter the 5 numbers:"))
+a,y=divmod(value,10000)
+b,y=divmod(y,1000)
+c,y=divmod(y,100)
+d,e=divmod(y,10)
+print(e,d,c,b,a)
