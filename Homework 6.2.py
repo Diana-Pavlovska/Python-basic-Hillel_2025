@@ -1,0 +1,5 @@
+n = int(input())
+d, n = divmod(n, 86400)
+h, n = divmod(n, 3600)
+m, s = divmod(n, 60)
+print(f"{d} {'day' if d % 10 == 1 and d % 100 != 11 else 'days' if 2 <= d % 10 <= 4 and d % 100 not in range(10, 20) else 'days'}, {h:02}:{m:02}:{s:02}")
